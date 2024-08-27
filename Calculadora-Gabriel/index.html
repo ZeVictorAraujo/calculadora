@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora</title>
+    <style>
+        body{ 
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            margin-top: 50px;
+        }
+        input,button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 18px;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+   <input type="number" id="numero1" placeholder="Número 1">
+   <input type="number" id="numero2" placeholder="Número 2">
+   <div>
+    <button onclick="soma()"> Somar </button> 
+    <button onclick="subtrai()">Subtrair</button>
+    <button onclick="multiplica()">Multiplicar</button>
+    <button onclick="divide()">Dividir</button>
+    <button onclick="potencia()">Potenciação</button>
+    <button  onclick="raizQuadrada()">Raiz Quadrada</button>
+   </div>
+   <div id="resultado"></div>
+   <script src="calculadora.js"></script>
+   <!--<script src="testeCalculadora.js"></script>-->
+</body>
+</html>
